@@ -1,6 +1,104 @@
-.container {
+/* <div class="parent">    --> Parent - papa */
 
-    display: inline-block;
-    background-color: gray;
-    
+/* <header class="header"> --> Contenedor - hijo */
+
+/* <div class="menu">      --> Hijo - contenedor */
+/* <div class="my_logo"></div> --> component */
+/* <nav class="options"></nav> --> component*/
+/* <div class="mail"></div> --> component */
+
+/* < div class="content"> --> contenedor
+   <nav class="social"></nav> --> component
+   <div class="text"> <h1> --> --> component
+   <div class="image"></div> --> component */
+
+
+*{ /* parent */
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
 }
+
+
+    .header{ /* hijo */
+        background-color: #B6B09F;
+        display:flex;
+        flex-flow: column nowrap;
+    }
+
+        .menu { /* container of header */
+            background-color: #3E3C3C;
+            display: flex;
+            flex-flow: row nowrap;
+            height: 100px;
+            align-items: center; 
+            
+            }
+                .my_logo{
+                background-color: #52357B;
+                flex: 1 0 auto;
+                height: 30px;
+
+                }
+
+                .options{
+                background-color: #52357B;
+                flex: 5 0 auto;
+                height: 30px;
+                }
+
+                .mail{
+                background-color: #52357B;
+                flex: 1 0 auto;
+                height: 30px;
+                }
+
+        .content{ /* container of content */
+        background-color: black;
+        display: flex;
+        height: 870px;
+
+
+            }
+
+                .social{
+                background-color: #52357B;
+                flex: 1 0 auto;
+                }
+
+                .text{
+                background-color: #52357B;
+                flex: 4 0 auto;
+                }
+
+                .image{
+                background-color: #7965C1;
+                flex: 4 0 auto;
+                }
+
+@media all and (max-width: 800px) {
+
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content{
+        flex-direction: column;
+        height: auto;
+    } 
+
+}
+
+@media all and (max-width: 400px) {
+
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content{
+        flex-direction: column;
+        height: auto;
+    }  
+}   
