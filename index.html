@@ -2,32 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Portfolio</title>
+
 </head>
 <body>
-    <div class="parent"> <!-- papa -->
+
+    <header class="application"> <!-- padre-->
         
-        <header class="header"> <!-- hijo -->
-
-            <div class="menu"> <!-- container -->
-                <div class="my_logo"></div>
-                <nav class="options"></nav>
-                <div class="mail"></div>
+        <div class="menu"> <!-- hijo -->
+            <div class="logo">
+                <a href="#"><i class="fa-regular fa-user fa-lg" style="color: #ffffff;"></i></a>
             </div>
+            <nav class="panel">
+                <a href="#" class="portfolio">Portfolio</a>
+                <a href="#" class="about">About</a>
+                <a href="#" class="contact">Contact</a>
+                <a href="mail"><i class="fa-regular fa-envelope fa-lg" style="color: #ffffff;"></i></a>
+            </nav>
+        </div>
 
-            <div class="content"> <!-- container -->
-                <nav class="social"></nav>
-                <div class="text"> <h1>tittle</h1> <br> <h3>subtittle</h3> <br> <p>text</p></div>
-            <!--<h1 class="titulo"></h1>
-                <h3 class="subtitulo"></h3>
-                <p class="description"></p> -->
-                <div class="image"></div>
+        <div class="content"> <!-- hijo -->
+            <nav class="social">
+                <a href="#"><i class="fa-brands fa-github fa-sm" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in fa-sm" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-angellist fa-sm" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter fa-sm" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-sharp fa-solid fa-m fa-sm" style="color: #ffffff;"></i></a> 
+            </nav>
+            <div class="text">
+                <br> <br><br><br>
+                <h1>Hello 
+                    <br>I'm Mauricio</h1>
+                    <h3>I'm a junior developer</h3> 
+                    <p>I am currently expanding my skills in web development, 
+                        with a focus on HTML, CSS, JavaScript, and Ruby. 
+                        <br>Through hands-on projects and continuous learning,
+                        I am building a strong foundation in both front-end
+                        and back-end technologies.</p>
             </div>
+        </div>
 
-        </header>
-
-    </div>
+    </header>
+   
 </body>
 </html>
