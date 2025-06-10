@@ -1,104 +1,262 @@
-/* <div class="parent">    --> Parent - papa */
-
-/* <header class="header"> --> Contenedor - hijo */
-
-/* <div class="menu">      --> Hijo - contenedor */
-/* <div class="my_logo"></div> --> component */
-/* <nav class="options"></nav> --> component*/
-/* <div class="mail"></div> --> component */
-
-/* < div class="content"> --> contenedor
-   <nav class="social"></nav> --> component
-   <div class="text"> <h1> --> --> component
-   <div class="image"></div> --> component */
-
-
-*{ /* parent */
+* {
     padding: 10px;
     margin: 10px;
-    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.application {
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    background: url(../icons/background_image.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    
+
+
+
+}
+
+.menu {
+    background-color: #3E3C3C;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+
+}
+
+.logo {
+
+    flex: 1 1 auto;
+    height: 40px;
+}
+
+.panel {
+    flex: 6 1 auto;
+    height: 10px;
+
+}
+
+.portfolio {
+    color: white;
+}
+
+.about {
+    color: white;
+}
+
+.contact {
+    color: white;
+
+}
+
+.content {
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.social {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
 
 
-    .header{ /* hijo */
-        background-color: #B6B09F;
-        display:flex;
-        flex-flow: column nowrap;
-    }
-
-        .menu { /* container of header */
-            background-color: #3E3C3C;
-            display: flex;
-            flex-flow: row nowrap;
-            height: 100px;
-            align-items: center; 
-            
-            }
-                .my_logo{
-                background-color: #52357B;
-                flex: 1 0 auto;
-                height: 30px;
-
-                }
-
-                .options{
-                background-color: #52357B;
-                flex: 5 0 auto;
-                height: 30px;
-                }
-
-                .mail{
-                background-color: #52357B;
-                flex: 1 0 auto;
-                height: 30px;
-                }
-
-        .content{ /* container of content */
-        background-color: black;
-        display: flex;
-        height: 870px;
+.text {
+    flex: 6 1 auto;
+}
 
 
-            }
 
-                .social{
-                background-color: #52357B;
-                flex: 1 0 auto;
-                }
-
-                .text{
-                background-color: #52357B;
-                flex: 4 0 auto;
-                }
-
-                .image{
-                background-color: #7965C1;
-                flex: 4 0 auto;
-                }
 
 @media all and (max-width: 800px) {
-
-    .menu {
-        flex-direction: column;
-        height: auto;
+     * {
+        margin: auto;
+        padding: auto;
     }
 
-    .content{
+    .menu {
+        align-items: center;
         flex-direction: column;
-        height: auto;
-    } 
+        flex-flow: row nowrap;
+        height: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
+
+    .panel {
+        flex-flow: row nowrap;
+        height: 30px;
+        font-size: 10px;
+        padding: 1px;
+        margin: 1px;
+
+
+    }
+
+    .content {
+        flex-direction: column-reverse;
+
+    }
+
+    .text {
+        height: 450px;
+    }
+
+    h1 {
+        font-family: "Lato", sans-serif;
+        font-style: italic;
+        color: #FF6B00;
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 0.37px;
+        line-height: 64px;
+
+    }
+
+    h3 {
+        font-weight: 400px;
+    }
+
+    .social {
+        padding-bottom: 10px;
+
+    }
 
 }
 
 @media all and (max-width: 400px) {
 
-    .menu {
-        flex-direction: column;
-        height: auto;
+    * {
+        margin: auto;
+        padding: auto;
     }
 
-    .content{
+    .menu {
+        align-items: center;
         flex-direction: column;
-        height: auto;
-    }  
-}   
+        flex-flow: row nowrap;
+        height: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
+
+    .panel {
+        flex-flow: row nowrap;
+        height: 30px;
+        font-size: 10px;
+        padding: 1px;
+        margin: 1px;
+
+
+    }
+
+    .content {
+        flex-direction: column-reverse;
+
+    }
+
+    .text {
+        height: 450px;
+    }
+
+    h1 {
+        font-family: "Lato", sans-serif;
+        font-style: italic;
+        color: #FF6B00;
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 0.37px;
+        line-height: 64px;
+
+    }
+
+    h3 {
+        font-weight: 400px;
+    }
+
+    .social {
+        padding-bottom: 10px;
+
+    }
+
+
+}
+
+@media all and (min-width: 801px) {
+
+    * {
+        margin: auto;
+        padding: auto;
+    }
+
+    .menu {
+        align-items: center;
+        flex-direction: column;
+        flex-flow: row nowrap;
+        height: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+
+
+    .panel {
+        flex-flow: row nowrap;
+        height: 30px;
+        font-size: 10px;
+        padding: 1px;
+        margin: 1px;
+
+
+    }
+
+    .content {
+        flex-direction: column-reverse;
+
+    }
+
+    .text {
+        height: 450px;
+    }
+
+    h1 {
+        font-family: "Lato", sans-serif;
+        font-style: italic;
+        color: #FF6B00;
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 0.37px;
+        line-height: 64px;
+
+    }
+
+    h3 {
+        font-weight: 400px;
+    }
+
+    .social {
+        padding-bottom: 10px;
+        justify-content: flex-start;
+        margin-left: 1px;
+
+    }
+
+}
